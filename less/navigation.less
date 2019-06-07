@@ -1,1 +1,38 @@
 // Navigation code here
+
+.container-nav {
+  .sticky();
+  .fullwidthFlex();
+  flex-direction: column;
+  align-items: center;
+  background-color: @wild-sand;
+  border-bottom: 2px solid @nav-border;
+
+  .company-name {
+    margin: auto;
+    padding: 13px 0 11px 0;
+  }
+
+  .navi {
+    padding: 9px 0;
+    width: 51%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media @phone {
+      width: 82%;
+    }
+
+    a {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @river-bend;
+
+      &:hover{
+        color: Chocolate;
+      }
+    }
+  }
+}

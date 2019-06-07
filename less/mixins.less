@@ -1,1 +1,31 @@
 // Mixins Here
+
+.buttonDisplay(@bgcolor, @color, @font-size, @width){
+  width: @width;
+  border: none;
+  padding: 7px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: @bgcolor;
+  color: @color;
+  font-size: @font-size;
+}
+
+.reverseColors {
+    background-color: white;
+    color: @btn-bg-color;
+    border: 1px solid @btn-bg-color;
+}
+
+.fullwidthFlex {
+  display: flex;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  opacity: 0.85;
+  top: 0;
+  width: 100%;
+}

@@ -34,13 +34,25 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website adapts to the width of a browser at specific break-points, which are determined with a media query. Adaptive layouts are easier and quicker to build, but they don’t accommodate many devices, because they are only designed for certain break points.
+
+A fully responsive website is built to respond to the size of the browser at any point. Responsive layouts achieve an experience that functions fluidly across most devices and screen sizes. They take more time and effort to develop, but they are now the industry standard.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Desktop-first is a web development approach in which base code is designed to be viewed on a desktop, and then adapted layouts are created for smaller devices/screen sizes by introducing style changes at specific decreasing max-width points. Mobile-first is an approach in which base code is designed for a mobile device first, and then the layout and features are expanded at increasing min-width points toward a desktop layout.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+62.5% of 16px (the typical default browser font-size) is 10px. Therefore, setting the font size to 62.5% makes it easier for us to use rem units (because 1rem = 10px, 1.5rem = 15px, etc.). Using rem units rather than pixels is important for accessibility. When users change their browser settings to be a different size, rem units will scale accordingly, whereas font-sizes set in pixels won’t.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows us to use and then compile a different language (like LESS) to make CSS more robust and functional. Preprocessors extend CSS with variables, operators, functions, mixins, and other usable assets.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is parametric mixins. I think they hold tremendous potential to make it easy to streamline and customize styles across layouts, but I’m still learning to apply them in a way that seems useful on these smaller projects. I find all of these concepts to be interesting and challenging; I’m not sure there is a single concept that gives me the most trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +68,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
