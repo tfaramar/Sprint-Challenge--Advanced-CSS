@@ -211,6 +211,9 @@ p {
   text-decoration: none;
   color: #454A59;
 }
+.container-nav .navi a:hover {
+  color: Chocolate;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
