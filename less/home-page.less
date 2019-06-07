@@ -4,6 +4,10 @@
 
   .intro {
 
+    img {
+      border-radius: 5px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -11,7 +15,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -57,14 +61,21 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .sign-up-btn {
+        .buttonDisplay (@btn-bg-color, white, 1.7rem, 29.5%);
+
+        &:hover {
+          background-color: white;
+          color: @btn-bg-color;
+          border: 1px solid @btn-bg-color;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
